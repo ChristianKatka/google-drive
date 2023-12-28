@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<main>
+  <section>
+    <app-space-giver></app-space-giver>
+    <h2>Hello {{ this.state.name$ | async }}</h2>
+    <app-space-giver></app-space-giver>
+    <!-- <app-error-box></app-error-box> -->
+    <h1>Select file</h1>
+    <app-space-giver></app-space-giver>
+    <app-select-file></app-select-file>
+    <app-space-giver></app-space-giver>
+    <h1>Files from google drive</h1>
+    <app-text-list [items]="filesFromGoogleDrive"></app-text-list>
+    <app-space-giver></app-space-giver>
+  </section>
+</main>

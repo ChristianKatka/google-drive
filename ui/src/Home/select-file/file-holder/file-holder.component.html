@@ -1,0 +1,8 @@
+<img
+  *ngIf="selectedFile && selectedFile.type === 'image/png'"
+  [src]="this.getTrustedMediaUrl()"
+  alt="selectedFile"
+/>
+
+<h3>Selected File:</h3>
+<p *ngIf="selectedFile">{{ selectedFile.name }}</p>

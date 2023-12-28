@@ -1,0 +1,37 @@
+@use "../../styles/variables/" as *;
+
+label {
+  max-width: 20em;
+  min-width: 20em;
+  min-height: 12em;
+  max-height: 12em;
+  cursor: pointer;
+
+  border: double 3px transparent;
+  border-radius: 40px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #6be0b7, #25d496);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+label:hover {
+  background-color: rgb(244, 244, 244);
+}
+
+mat-icon {
+  color: var(--lighter-gray);
+}
+
+p {
+  color: var(--lighter-gray);
+  margin: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button {
+  margin-top: 2rem;
+}

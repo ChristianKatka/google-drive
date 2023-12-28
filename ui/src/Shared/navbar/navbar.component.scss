@@ -1,0 +1,17 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 300;
+}
+
+mat-toolbar {
+  height: 65px;
+  background: linear-gradient(to left, #daecfe, #feffea);
+  backdrop-filter: blur(8px);
+}
+
+h1 {
+  color: #4e5d6a;
+}

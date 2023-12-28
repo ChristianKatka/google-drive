@@ -1,0 +1,51 @@
+@use "../../styles/variables/" as *;
+
+main {
+  border: 1px solid #f0f0f0;
+  border-radius: 15px;
+
+  .header {
+    display: flex;
+    padding: 0.6rem 1rem;
+    background-color: #f4f4f4;
+    border-radius: 15px 15px 0 0;
+
+    p {
+      color: #717273;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    p:first-child {
+      flex: 4;
+    }
+
+    p:nth-child(2) {
+      flex: 5;
+    }
+  }
+
+  .one-item-row:nth-child(even) {
+    background-color: white;
+  }
+  .one-item-row:nth-child(odd) {
+    background-color: #fafafa;
+  }
+
+  .one-item-row {
+    padding: 0.6rem 1rem;
+
+    p {
+      color: #777777;
+      margin: 0;
+    }
+
+    p:first-child {
+      flex: 4;
+    }
+
+    p:nth-child(2) {
+      flex: 5;
+    }
+  }
+}

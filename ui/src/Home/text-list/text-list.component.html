@@ -1,0 +1,10 @@
+<main class="flex-column" *ngIf="items && items.length">
+  <div class="header flex-row">
+    <p>Name</p>
+    <p>mimeType</p>
+  </div>
+  <div class="one-item-row flex-row" *ngFor="let item of items">
+    <p>{{ item.name }}</p>
+    <p>{{ item.mimeType }}</p>
+  </div>
+</main>

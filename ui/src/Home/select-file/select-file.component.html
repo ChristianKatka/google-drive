@@ -1,0 +1,15 @@
+<label class="flex-row align-center-center">
+  <input appFileSelect type="file" (fileSelect)="onFileSelect($event)" />
+
+  <div class="flex-column align-center-center">
+    <mat-icon>image</mat-icon>
+    <p>select file</p>
+  </div>
+</label>
+
+<app-file-holder
+  *ngIf="selectedFile"
+  [selectedFile]="selectedFile"
+></app-file-holder>
+
+<button *ngIf="selectedFile" mat-raised-button>Upload to drive</button>
